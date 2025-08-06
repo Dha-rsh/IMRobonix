@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>IMRobonix </title>
-  <link rel="stylesheet" href="Homes.css">
+  <title>IMRobonix</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Foot.css">
   <link rel="stylesheet" href="Head.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="icon" href="images/logo.png" type="image/png">
-
 </head>
 <body>
 
 <header class="navbar">
-  <img src="images/Logo.png" alt="Logo" class="logo" onclick="window.location.href='home.html'">
-
-  <nav class="menu ">
-    <a class="" href="Home.html" data-discover="true">Home</a>
-    <a class="active" href="/About.html" data-discover="true">About</a>
-    <div class="dropdown"><a class="" href="/Products" data-discover="true">Products 
-      <span class="arrow">▼</span></a><div class="dropdown-content">
-        <a class="" href="/Prodsurgikot" data-discover="true">Surgikot</a>
-        <a class="" href="/Prodcheri" data-discover="true">Cheribot</a>
-      </div>
+  <img src="images/Logo.png" alt="Logo" class="logo" onclick="window.location.href='index.html'">
+  <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+    <i class="fas fa-bars"></i>
+  </div>
+ <nav class="menu" id="menu">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <div class="dropdown">
+    <a href="Products">Products <span class="arrow">▼</span></a>
+    <div class="dropdown-content">
+      <a href="Prodsurgikot">Surgikot</a>
+      <a href="Prodcheri">Cheribot</a>
     </div>
-    <a class="" href="/Team" data-discover="true">Team</a>
-    <a class="" href="/Achievements" data-discover="true">Achievements</a>
-    <a class="" href="/Gallary" data-discover="true">Gallery</a>
-    <a class="" href="/ContactForm" data-discover="true">Contact</a>
-  </nav>
+  </div>
+  <a href="Team">Team</a>
+  <a href="Achievements">Achievements</a>
+  <a href="Gallary">Gallery</a>
+  <a href="ContactForm">Contact</a>
+</nav>
+
 </header>
+
 
 <div class="video-container">
   <div class="video">
@@ -38,10 +43,11 @@
     </video>
   </div>
   <div class="overlay-text">
-    <h1>Robotic functionality in a hand held minimally invasive surgical device</h1>
+    <h1>Robotic functionality in a handheld minimally invasive surgical device</h1>
   </div>
 </div>
 
+<!-- Overview Section -->
 <div class="background-container">
   <div class="background-content">
     <h2>Redefine Surgical Innovation with Advanced Robotic Technology</h2>
@@ -58,31 +64,31 @@
   </div>
 </div>
 
+<!-- Product Highlights -->
 <div class="homeproduct">
-  <h1> Explore Our Products </h1>
+  <h1>Explore Our Products</h1>
 </div>
 <div class="slider-container">
   <div class="image-box">
     <div class="surgi">
-  <img src="images/Surgikot2.png" alt="Surgical Device Image" />
-  <div class="surgi-text">
-    <h2>Surgikot</h2>
-    <p>WORLD'S FIRST THUMB-CONTROLLED ROBOTIC SURGICAL DEVICE</p>
+      <img src="images/Surgikot2.png" alt="Surgical Device Image" />
+      <div class="surgi-text">
+        <h2>Surgikot</h2>
+        <p>WORLD'S FIRST THUMB-CONTROLLED ROBOTIC SURGICAL DEVICE</p>
+      </div>
+    </div>
+
+    <div class="cheri">
+      <img src="images/Cheribot.png" alt="Cheribot Image" />
+      <div class="cheri-text">
+        <h2>Cheribot</h2>
+        <p>AI VISION REPLICATING EXACT HUMAN HAND WITH 15 DEGREES OF FREEDOM</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="cheri">
-  <img src="images/Cheribot.png" alt="Cheribot Image" />
-  <div class="cheri-text">
-    <h2>Cheribot</h2>
-    <p>AI VISION REPLICATING EXACT HUMAN HAND WITH 15 DEGREES OF FREEDOM</p>
-  </div>
-</div>
-
-  </div>
-</div>
-
-
+<!-- Footer -->
 <footer class="footer">
   <div class="footer-container">
 
@@ -93,10 +99,10 @@
         Our team is dedicated to delivering high-quality technology.
       </p>
       <div class="social-cons">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com/_imrobonix_" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/company/imrobonix" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/_imrobonix_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/imrobonix" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
       </div>
     </div>
 
@@ -126,6 +132,32 @@
     © 2025 Imrobonix Pvt Ltd. All rights reserved.
   </div>
 </footer>
+
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".menu a");
+
+    navLinks.forEach(link => {
+      const linkPage = link.getAttribute("href").split("/").pop();
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+  }
+</script>
+
+
+
 
 </body>
 </html>
