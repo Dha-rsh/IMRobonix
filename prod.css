@@ -1,0 +1,253 @@
+/* ----------- Base Layout ----------- */
+.cheri-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: 'Montserrat', 'Poppins', 'Arial', sans-serif;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* ----------- Hero Section ----------- */
+.cheri-content {
+  text-align: center;
+  padding: 2rem 0;
+  animation: zoomOutEffect 2s ease-in-out;
+}
+
+.Cheribot {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+@keyframes zoomOutEffect {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ----------- Intro Text ----------- */
+.container-cheri {
+  padding: 2rem;
+  text-align: center;
+}
+
+.content-cheri h1 {
+  font-size: 2.5rem;
+  color: #217199;
+  font-weight: 600;
+}
+
+.content-cheri h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.content-cheri p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ----------- Features Section ----------- */
+.cfeature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+  background: linear-gradient(135deg, #111, #1c1c1c);
+}
+
+.cfeature-content {
+  flex: 1;
+}
+
+.cfeature-content .one,
+.cfeature-content .two,
+.cfeature-content .three,
+.cfeature-content .four,
+.cfeature-content .five {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  margin: 12px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cfeature-content div:hover {
+  transform: translateX(10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.cfeature-content p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #eee;
+}
+
+.cfeature-image {
+  flex: 1;
+  text-align: center;
+}
+
+.cfeature-image img {
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* ----------- Best Works Section ----------- */
+.cbest-container {
+  padding: 60px;
+  background: #141414;
+  margin:5px auto;
+}
+.cbest-container h1,.cimpact-container h1{
+    font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+  margin:10px auto;
+}
+
+.cbest-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cbest-content div {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cbest-content div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.cbest-content h1 {
+  font-size: 1.3rem;
+  color: #00aaff;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.cbest-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* ----------- Impact Section ----------- */
+.cimpact-container {
+  /* background: url('images/Cfeature.png') no-repeat center center;
+  background-size: cover; */
+ background: #141414;
+  padding: 4rem 2rem;
+  color: #fff;
+  margin:5px auto;
+}
+
+.cimpact-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.cimpact-content h1 {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.cimpact-content .one, 
+.cimpact-content .two {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cimpact-content .one:hover,
+.cimpact-content .two:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px #00a5ee;
+}
+
+.cimpact-content h1 {
+  font-size: 1.4rem;
+  color: #00a5ee;
+  margin-bottom: 1rem;
+}
+
+.cimpact-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cimpact-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* ----------- Responsive ----------- */
+@media (max-width: 768px) {
+  .content-cheri h1 {
+    font-size: 2rem;
+  }
+
+  .cfeature-container {
+    flex-direction: column;
+  }
+
+  .cbest-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cimpact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-cheri h1 {
+    font-size: 1.6rem;
+  }
+
+  .content-cheri h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-cheri p {
+    font-size: 0.9rem;
+  }
+
+  .cfeature-content h1,
+  .cbest-content h1,
+  .cimpact-content h1 {
+    font-size: 1.4rem;
+  }
+}

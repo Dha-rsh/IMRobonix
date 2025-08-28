@@ -1,0 +1,256 @@
+/* General Styling */
+.conttt {
+  align-items: center;
+    background-image: url('tct2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(90%);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: flex-start;
+ 
+  gap: 30px;
+  margin-right: 80px;
+  padding: 40px;
+  /* background: linear-gradient(to right, #1e3c72, #2a5298); Professional Blue Gradient */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Content */
+.contact-left {
+  flex: 1;
+  max-width: 700px;
+  color: white;
+  margin-top: 5%;
+
+}
+
+.contact-left h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color:black;
+  
+  text-align: left;
+}
+
+.contact-left p {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+  
+}
+
+/* Social Icons */
+/* .social-icons {
+  transform: translateX(-35%);
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  margin-right: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+} */
+
+
+.social-icons {
+  margin-top: 20px; /* Space above the social icons */
+  display: flex; /* Make the icons align horizontally */
+  justify-content: center; /* Center the icons horizontally */
+  gap: 15px; /* Space between the icons */
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Right Contact Form */
+.contact-right {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  align-items: left;
+  padding-top: 80px;
+}
+
+.input-box {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.field,
+.fieldmess {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  color:#ccc;
+  background-color: black;
+}
+
+.fieldmess {
+  min-height: 100px;
+  resize:vertical;
+  color:#ccc;
+  border-color:1px  black;
+}
+
+.field:focus,
+.fieldmess:focus {
+  border-color: 2px  white;
+    color:#ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* For Tablets */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .contact-left, .contact-right {
+    max-width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+  .contact-right {
+    padding-top: 0;
+  }
+
+  .contact-left p {
+    font-size: 16px;
+  }
+  .contact-left h1 {
+    font-size: 32px;
+  }
+}
+
+/* For Mobile Screens */
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 20px;
+    width:95%;
+    margin-top: 10%;
+    margin-left: 10px;
+  }
+
+  .contact-left h1 {
+    font-size: 28px;
+  }
+
+  .contact-left p {
+    font-size: 14px;
+  }
+
+  .field,
+  .fieldmess {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .contact-right {
+    padding-top: 0;
+  }
+}
+
+.ssocial-icons {
+  display: flex;
+  justify-content: left; /* Center align icons */
+  gap: 15px; /* Space between icons */
+  margin-top: 20px; /* Space between <p> and icons */
+}
+
+.ssocial-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular icons */
+  background-color: rgba(0, 0, 0, 0.1); /* Light background */
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.ssocial-icons a i {
+  font-size: 20px;
+  color: #000000; /* Dark grey icons */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.ssocial-icons a:hover {
+  background-color: #007bff; /* Change background on hover */
+}
+
+.ssocial-icons a:hover i {
+  color: white; /* Change icon color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ssocial-icons {
+      gap: 10px; /* Reduce spacing on smaller screens */
+  }
+  .ssocial-icons a {
+      width: 35px;
+      height: 35px;
+  }
+  .ssocial-icons a i {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ssocial-icons {
+      flex-wrap: wrap; /* Wrap icons on very small screens */
+  }
+  .input-box {
+    width:100%;
+  }
+}

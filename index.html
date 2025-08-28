@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> IMRobonix</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Foot.css">
+  <link rel="stylesheet" href="Head.css">
+    <link rel="stylesheet" href="App.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+  <div id="root">
+  <div class="App">
+    <header class="navbar">
+      <img src="images/Logo.png" alt="Logo" class="logo" onclick="window.location.href='index.html'">
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <div class="dropdown">
+          <a href="/products.html">Products <span class="arrow">▼</span></a>
+          <div class="dropdown-content">
+            <a href="/prodsurgikot.html">Surgikot</a>
+            <a href="/prodcheri.html">Cheribot</a>
+          </div>
+        </div>
+        <a href="/team.html">Team</a>
+        <a href="/achievements.html">Achievements</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+   <div class="video-container">
+    <div class="video">
+      <video width="100%" height="100%" autoplay loop muted>
+        <source src="video/Surgikot.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="overlay-text">
+      <h1>Robotic functionality in a handheld minimally invasive surgical device</h1>
+    </div>
+  </div>
+
+  <!-- Background Content -->
+  <div class="background-container">
+    <div class="background-content">
+      <h2>Redefine Surgical Innovation with Advanced Robotic Technology</h2>
+      <p>
+        SurgiKot is a lightweight, high-precision handheld smart medical robotic device designed for multifunctional surgical procedures. It features an articulating end gripper and advanced laparoscopic instruments, ensuring accuracy in operations. CheriBot, a smart robotic bionic upper limb, offers high grasping capability, allowing amputees to mimic human hand movements with 15 degrees of freedom. Utilizing camera vision, it adapts to various contours for enhanced control and functionality.
+      </p>
+      <div class="cta-buttons">
+        <a href="products.html" class="btn btn-primary">Explore Products</a>
+        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="background-content1">
+      <img src="images/overview.png" alt="overview" />
+    </div>
+  </div>
+
+
+  <div class="homeproduct">
+    <h1>Explore Our Products</h1>
+  </div>
+
+
+  <div class="slider-container">
+    <div class="image-box">
+      <div class="surgi">
+        <div class="sur">
+          <div class="image-slider">
+            <img src="images/Surgikot2.png" alt="SurgiKot Front" class="rotating-image img-a" />
+            <img src="images/Surgi2.png" alt="SurgiKot Side" class="rotating-image img-b" />
+          </div>
+        </div>
+        <div class="nsur">
+          <div class="news"><a href="prodsurgikot.html"><h2>SurgiKot</h2></a></div>
+          <p>WORLD'S FIRST THUMB-CONTROLLED ROBOTIC SURGICAL DEVICE</p>
+          <h3>
+            A lightweight, high precision handheld smart medical robotic device with multifunctional 
+            surgical procedures, developed using articulating end gripper with high precision and full suite 
+            of advanced laparoscopic instruments.
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CheriBot Product -->
+  <div class="slider-container">
+    <div class="image-box">
+      <div class="q">
+        <div class="nq">
+          <div class="c"><a href="prodcheri.html"><h1 class="ched">CheriBot</h1></a></div>
+          <p>AI VISION REPLICATING EXACT HUMAN HAND WITH 15 DEGREES OF FREEDOM</p>
+          <h3>A lightweight, high grasping, smart robotic bionic upper limb. Amputees can grab any contour using camera vision replicating exact human hand with 15 degrees of freedom.</h3>
+        </div>
+        <div class="cheri">
+          <div class="image-slider">
+            <img src="images/Cheri1.png" alt="CheriBot A" class="rotating-image img-a" />
+            <img src="images/Cheribot.png" alt="CheriBot B" class="rotating-image img-b" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <!-- <div class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Surgical Experience?</h2>
+        <p>Join the future of medical robotics with our cutting-edge solutions designed for precision, safety, and innovation.</p>
+        <div class="cta-stats">
+          <div class="stat-item"><h3>15+</h3><p>Years Experience</p></div>
+          <div class="stat-item"><h3>100+</h3><p>Successful Surgeries</p></div>
+          <div class="stat-item"><h3>50+</h3><p>Happy Clients</p></div>
+        </div>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
+          <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <footer class="footer" data-aos="fade-up">
+    <div class="footer-container">
+
+
+      <div class="footer-column">
+        <h2>About</h2>
+        <p>
+          We specialize in robotic solutions, bringing innovation to the industry.
+          Our team is dedicated to delivering high-quality technology.
+        </p>
+        <div class="social-cons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/_imrobonix_" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/company/imrobonix" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-columns">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Contact</h2>
+        <p>📞 +91 72000 61904</p>
+        <p>📞 +91 93449 84440</p>
+        <p>📧 info@imrobonix.com</p>
+        <p>📧 admin@imrobonix.com</p>
+        <p>📍 Anna University, Sir C V Raman Science Block 3rd, Campus, Guindy, Chennai, Tamil Nadu 600025</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Imrobonix Pvt Ltd. All rights reserved.
+    </div>
+  </footer>
+
+  </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+   
+
+    const sliders = document.querySelectorAll(".image-slider");
+    sliders.forEach(slider => {
+      slider.querySelectorAll("img").forEach(img => {
+        img.style.animationPlayState = "running";
+      });
+    });
+  </script>
+</body>
+</html>

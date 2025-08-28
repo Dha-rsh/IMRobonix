@@ -1,0 +1,736 @@
+.prodcheribody {
+    background-color: white;
+    overflow-x: hidden;
+  }
+
+  .oversur h1 {
+    display: none;
+}
+  .Surgikot3 {
+      width:100%;
+      height:87vh;
+      animation: zoomOutEffect 2s ease-in-out ;
+  }
+  @keyframes zoomOutEffect {
+    0% {
+        transform: scale(1.1); /* Start zoomed in by 10% */
+    }
+    100% {
+        transform: scale(1); /* End at normal size */
+    }
+  }
+  @media (max-width:480px)
+  {
+    .Surgikot3 {
+        height:40vh;
+        margin-bottom: 3%;
+    }
+    .oversur h1 {
+        display: none;
+    }
+  }
+
+/*-----surgiimg-----------*/
+
+/* Base styles */
+.cont {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #f9f9f9; /* Light background for contrast */
+    
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for headings and paragraphs */
+.cont h1, 
+.cont h2, 
+.cont p {
+    display: block;
+    margin: 0; /* Remove extra margins */
+    margin-bottom: 15px; /* Add consistent spacing */
+}
+
+.cont h1 {
+    margin-top: 3%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000; /* Professional blue tone */
+    text-align: center;
+}
+
+.cont h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #217199; 
+    /*color: rgb(69, 187, 201);*/
+    
+    text-align: center;
+    line-height: 1.4;
+}
+
+.cont p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-shadow: 1px black;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cont h1 {
+        font-size: 2rem;
+    }
+
+    .cont h2 {
+        font-size: 1.5rem;
+    }
+
+    .cont p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont h1 {
+        font-size: 1.5rem;
+    }
+
+    .cont h2 {
+        font-size: 1.2rem;
+    }
+
+    .cont p {
+        font-size: 14px;
+    }
+}
+
+
+/*----------evolusur----------*/
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Montserrat', 'Poppins', 'Poiret One';
+    padding: 20px;
+    gap: 20px; /* Spacing between content and image */
+}
+
+.feature-content {
+    flex: 1;
+    min-width: 300px; /* Ensure minimum width for smaller screens */
+    max-width: 60%;
+    animation: slideIn 1s ease-in-out; /* Animation for entry */
+}
+
+.feature-content h1 {
+    font-size: 2 rem;
+    /* margin: 20px 0; */
+    /* color: rgb(108, 212, 241);
+    text-shadow: 1px 1px gray; */
+     color: #217199; 
+    /* color: #43ace0; */
+    font-weight: 500;
+    text-align: center;
+    
+
+}
+
+
+
+/* .feature-content p {
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgb(246, 247, 250);
+    font-weight: 300;
+} */
+
+/* .feature-content div {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px; 
+}
+.feature-content p {
+    font-size: 140%;
+    color: white;
+    text-shadow: 1px 1px gray;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    text-align: justify;
+    padding: 15px;
+    line-height: 3; 
+    display: inline; 
+    box-shadow: 0 2px 4px rgb(246, 247, 250);
+    font-weight: 100;
+} */
+
+
+.feature-content div {
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 15px;
+    padding-left: 35%; 
+}
+
+.feature-content p {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px gray;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    padding: 5px 10px; 
+    line-height: 1.8; 
+    box-shadow: 0 2px 4px rgb(246, 247, 250);
+    font-weight: 300;
+    margin: 0; 
+}
+.feature-content p :hover {
+    box-shadow: 0 2px 4px rgb(82, 226, 234);
+}
+.feature-content div::before {
+    content: "➵"; 
+    font-size: 2rem;
+    /* color: rgb(113, 196, 252); 
+    text-shadow: 1px 2px rgb(71, 231, 242); */
+    /* color: #43ace0; */
+    color:#217199;
+    /*color: rgb(80, 213, 228);*/
+    margin-right: 10px; 
+}
+
+
+
+/* .feature-content p::before {
+    content: "➵";
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: rgb(113, 196, 252);
+    text-shadow: 1px 2px rgb(71, 231, 242);
+} */
+
+.feature-image {
+    flex: 1;
+    min-width: 300px; /* Minimum width for responsiveness */
+    max-width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    animation: zoomIn 1s ease-in-out; /* Animation for entry */
+}
+
+.feature-image img {
+    width: 90%;
+    max-width: 800px; /* Limit image size */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .feature-content,
+    .feature-image {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    .feature-content div {
+        padding-left: 20px; /* Adjust arrow spacing */
+    }
+    .feature-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-content h1 {
+        font-size: 1.5rem;
+        margin-bottom: 3%;
+    }
+
+    .feature-content p {
+        font-size: 14px;
+    }
+
+    .feature-content p::before {
+        font-size: 1.2rem;
+    }
+}
+
+
+/*-------features----------*/
+
+.best-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 20px 60px; 
+  }
+  .best-content h1 {
+  padding-right:20%;
+  padding-left:10%;
+  text-shadow:1px 1px rgb(0, 0, 0);
+  font-family:'Montserrat','Poppins','Poiret One';
+  
+  }
+  
+  
+  .best-content p {
+  font-size: 18px;
+  
+  font-family:'Montserrat','Poppins','Poiret One';
+  text-align: justify;
+  padding: 10px ;
+  line-height: 0.8;
+  display: inline-block;
+  
+  
+  }
+  /*.best-content .one {
+      box-shadow:0 8px 8px black;
+      
+    }
+    .best-content .two {
+      box-shadow:0 8px 8px black ;
+    }
+    .best-content .three {
+      box-shadow:0 8px 8px gray ;
+    }
+    .best-content .four {
+      box-shadow:0 8px 8px gray ;
+    }*/
+    
+    .best-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.1); 
+      padding: 20px 0px; 
+      padding-bottom:8%;
+    }
+    
+    .best-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto); 
+      gap: 20px; 
+      max-width: 1200%; 
+      text-align: center; 
+      font-family:'Montserrat','Poppins','Poiret One';
+      
+      width:180%;
+    }
+    
+    .best-content h1 {
+      grid-column: span 2; 
+      font-size: 2em;
+      margin-bottom: 30px;
+      font-family:'Montserrat','Poppins','Poiret One';
+      color: white;
+      font-weight:500;
+      padding-top: 5%;
+      text-shadow:1px 1px rgb(0, 0, 0);
+    }
+    
+    .best-content .one
+     {
+      
+      padding: 20px;
+      padding-left: 5%;
+      width:70%;
+      text-align: center;
+      font-size:1em;
+    }
+     
+    .best-content .two
+    {
+      /*background-color: rgb(233, 232, 232);*/
+      padding-left: 5%;
+      padding: 20px;
+      width:70%; 
+      border-radius: 10px; 
+      text-align: center;
+      
+    }
+    .best-content .three
+    {
+      /*background-color: rgb(188, 215, 244);*/
+      
+      width:70%;
+      padding: 20px;
+      
+      border-radius: 10px; 
+      text-align: center;
+      
+      
+    }
+    .best-content .four
+    {
+      
+      padding: 20px;
+      width:70%;
+      border-radius: 10px; 
+      text-align: center;
+      
+    }
+    .best-content .one h1,
+    .best-content .two h1,
+    
+    .best-content .three h1,
+    .best-content .four h1
+     {
+      font-size: 28px;
+      margin-bottom: 10px;
+     /* color: rgb(95, 237, 253);*/
+      color:#cccee3;
+      text-shadow:1px 1px rgb(0, 0, 0);
+      padding-left:5%;
+      padding-right:10%; 
+      font-weight:450;
+      
+    }
+    
+    
+    .best-content .one p,
+    .best-content .two p,
+    .best-content .three p,
+    .best-content .four p {
+      font-size: 18px;
+      color: white; 
+      line-height: 1.7;
+      padding: 0 10px; 
+      padding-left: 5%;
+      font-weight: 200;
+      font-family: 'poppins',sans-serif;
+    }
+
+    .best-container {
+        background: url('images/Surgikot3.png') no-repeat center center;
+        background-size: cover; /* Cover the entire container with the image */
+        padding: 0px;
+        
+        color: white; /* Ensure text is readable on the background image */
+    }
+    
+    .best-content {
+        background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for readability */
+        padding-left: 10%;
+        
+        
+    }
+    
+    .best-content h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2.5em;
+    }
+    .best-content .four h1{
+        margin-top:-0.5%;
+        
+        
+    }
+    .best-content .four p{
+      
+      padding-top:4%;
+      
+  }
+    .best-content .one, .best-content .two, .best-content .three, .best-content .four {
+        background: none; /* Transparent background */
+        
+        padding: 15px;
+        margin: 20px 0; /* Space between the boxes */
+        
+    }
+    
+    .best-content .one, .best-content .two, .best-content .three, .best-content .four h1 {
+        margin-bottom: 10px;
+    }
+    
+    .best-content .one, .best-content .two, .best-content .three, .best-content .four p {
+        margin: 0;
+    }
+    @media (max-width:480px)
+    {
+
+    
+    .best-content .one p,
+    .best-content .two p,
+    .best-content .three p,
+    .best-content .four p {
+        font-size: 14px;
+        text-align: justify;
+        width:23vh;
+    }
+    .best-content .one h1,
+    .best-content .two h1,
+    
+    .best-content .three h1,
+    .best-content .four h1{
+        font-size: 20px;
+    }
+
+    .best-content h1 {
+        font-size: 1.6rem;
+    }
+    }
+/*--------bestcont*-----------*/
+
+
+
+.impact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/impsurg.png');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background image stay fixed on scroll */
+    filter: brightness(90%);
+    padding: 20px 0; 
+    padding-bottom: 8%;
+    min-height: 100vh; /* Full viewport height for better responsiveness */
+}
+
+.impact-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default layout for larger screens */
+    gap: 30px;
+    max-width: 1300px;
+    text-align: center;
+    font-family: 'Montserrat', 'Poppins', 'Poiret One';
+    color: black;
+    width: 90%; /* Ensures content stays within the viewport */
+    margin: 0 auto;
+}
+
+.impact-content:hover {
+    transform: scale(1.1);
+}
+
+.impact-content h1 {
+    grid-column: span 3;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', 'Poppins', 'Poiret One';
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    padding-left: 5%;
+    font-weight: 500;
+}
+
+.impact-content .one, 
+.impact-content .two {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-shadow: 0 2px 2px white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-content .one:hover, 
+.impact-content .two:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 4px rgb(113, 232, 248);
+}
+
+.impact-content .one h1, 
+.impact-content .two h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00a5ee;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    padding-right: 25%;
+    border-bottom: 2px rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 500;
+}
+
+.impact-content .two h1 {
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+.impact-content .one ul, 
+.impact-content .two ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.impact-content .one ul p, 
+.impact-content .two ul p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.7;
+    margin: 10px 0;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .impact-content {
+        grid-template-columns: repeat(3, 1fr); /* Two columns for medium screens */
+        gap: 20px;
+    }
+
+    .impact-content h1 {
+        font-size: 2em;
+    }
+
+    .impact-content .one, 
+    .impact-content .two {
+        padding: 15px;
+    }
+
+    .impact-content .one h1, 
+    .impact-content .two h1 {
+        font-size: 26px;
+        padding-right: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .impact-content {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 15px;
+        display: block;
+    }
+
+    .impact-content h1 {
+        font-size: 1.8em;
+    }
+
+    .impact-content .one, 
+    .impact-content .two {
+        padding: 10px;
+    }
+
+    .impact-content .one h1, 
+    .impact-content .two h1 {
+        font-size: 24px;
+        padding-right: 0%;
+        text-align: center;
+    }
+    .impact-content .one ul p, 
+    .impact-content .two ul p {
+        font-size: 16px;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .impact-content h1 {
+        font-size: 1.5em;
+    }
+
+    .impact-content .one, 
+    .impact-content .two {
+        padding: 8px;
+    }
+
+    .impact-content .one h1, 
+    .impact-content .two h1 {
+        font-size: 1em;
+        padding-right: 20%;
+    }
+
+    .impact-content ul p {
+        font-size: 110%;
+    }
+} */
+
+
+@media (max-width: 480px) {
+    .impact-container {
+        display: block;
+    }
+    .impact-content {
+        display: block; /* Stack the items vertically */
+        text-align: center; /* Center-align the text and content */
+        gap: 0; /* Remove gaps as block format naturally stacks */
+    }
+
+    .impact-content h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .impact-content .one, 
+    .impact-content .two {
+        margin-bottom: 20px; /* Add space between the blocks */
+        padding: 10px; /* Slightly larger padding for better readability */
+        background-color: rgba(0, 0, 0, 0.3); /* Keep the styling consistent */
+        box-shadow: 0 2px 2px white; /* Ensure consistent shadows */
+        border-radius: 8px; /* Optional: rounded corners for a modern feel */
+        width: 90%; /* Ensure blocks do not exceed screen width */
+        margin: 0 auto 20px auto; /* Center-align the blocks */
+    }
+
+    .impact-content .one h1, 
+    .impact-content .two h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .impact-content .one ul p, 
+    .impact-content .two ul p {
+        font-size: 14px;
+    }
+
+    .impact-content ul {
+        padding: 0;
+        margin: 0;
+        list-style: none; /* Remove bullet points */
+    }
+
+    .impact-content ul p {
+        font-size: 110%;
+        line-height: 1.5;
+        color: white; /* Ensure readability */
+        margin: 5px 0;
+    }
+}

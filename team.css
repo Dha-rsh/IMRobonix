@@ -1,0 +1,2216 @@
+.teamtitle {
+  
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-end; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center text inside the container */
+    min-height: 70vh; /* Set a minimum height for the container */
+    width:100% ;
+    padding: 20px; /* Add padding for spacing */
+    background-image: url('images/Ttitle.png'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Set text color to white for contrast */
+     /* Include padding in width/height */
+    position: relative;
+    
+  }
+  @media (max-width:480px)
+  {
+  * {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+  }
+  }
+  .teamtitle:hover {
+    filter:brightness(60%);
+  }
+  .teamtitle h1 {
+    color:white;
+    font-size: 2.5rem; /* Large font size for the main heading */
+    font-weight: bold; /* Bold font for emphasis */
+    margin: 0; /* Remove default margin */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a shadow for readability */
+  }
+  @media (max-width:480px)
+  {
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  }
+  .teamtitle h2.line {
+    color:white;
+    font-size: 1.8rem; /* Slightly smaller font size for subheading */
+    font-weight: normal; /* Normal font weight */
+    margin: 10px 0 0; /* Add space above the subheading */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a shadow for readability */
+  }
+  
+  @media (max-width: 768px) {
+    .teamtitle h1 {
+      font-size: 2rem; /* Reduce font size for medium screens */
+    }
+  
+    .teamtitle h2.line {
+      font-size: 1.5rem; /* Reduce font size for subheading on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .teamtitle {
+      overflow-x: hidden;
+      padding: 15px; /* Compact padding for small screens */
+    }
+  
+    .teamtitle h1 {
+      font-size: 1.8rem; /* Further reduce font size for small screens */
+    }
+  
+    .teamtitle h2.line {
+      font-size: 1.2rem; /* Adjust font size for subheading on small screens */
+    }
+  }
+  
+  
+
+
+.topic-container {
+    text-align: center; /* Center align the container's content */
+    margin: 20px auto; /* Add spacing around the container */
+    max-width: 100%; /* Ensure the container adapts to screen width */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+  .topic-content {
+    display: flex; /* Flexbox for inline-block behavior */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align the items horizontally */
+    gap: 15px; /* Space between items */
+  }
+  
+  .topic-content div {
+    color:black;
+    display: inline-block; /* Ensure items are displayed inline */
+    padding: 15px 20px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add a visible border */
+    border-radius: 10px; /* Rounded corners for modern look */
+    background-color: #f4f4f4; /* Light gray background */
+    text-align: center; /* Center align text inside the items */
+    cursor: pointer; /* Pointer on hover for interactive feel */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hover effect transitions */
+  }
+  .topica h2,.topicb h2,.topicc h2,.topicd h2 {
+    color:black;
+    font-size: 20px;
+  }
+  .topic-content div:hover {
+    background-color: #6db6ed; /* Change background on hover */
+    color: rgb(0, 0, 0); /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .topic-content a {
+    text-decoration: none; /* Remove underline from links */
+    /* color: inherit;  */
+    font-size: 1rem; /* Ensure readable font size */
+  }
+  
+  @media (max-width: 768px) {
+    .topic-content div {
+      flex: 1 1 calc(50% - 30px); /* Adjust for medium screens (2 items per row) */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .topic-content div {
+      flex: 1 1 calc(100% - 30px); /* Adjust for small screens (1 item per row) */
+    }
+  }
+  
+  .board-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the heading horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 20vh; /* Set minimum height for visual balance */
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+  }
+  
+  #board-of-directors h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    font-weight: 700; /* Bold font */
+    color: #000000; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Capitalize all letters */
+    text-align: center; /* Center-align text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  }
+  
+  .custom-under {
+    position: relative; /* Required for pseudo-element */
+    display: inline-block; /* Ensure the text is treated as block-level */
+    padding-bottom: 10px; /* Space below the text */
+  }
+  
+  /* .custom-under::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 4px; 
+    background: linear-gradient(to right, #91f3fa, #47b3e6); 
+    border-radius: 2px; 
+  } */
+  
+  @media (max-width: 768px) {
+    #board-of-directors h1 {
+      font-size: 2.5rem; /* Reduce font size for tablets */
+    }
+  
+    .custom-under::after {
+      height: 3px; /* Adjust underline thickness */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #board-of-directors h1 {
+     
+      font-size: 1.5rem; /* Further reduce font size for small screens */
+      
+    }
+  
+    .custom-under::after {
+      height: 2px; /* Adjust underline thickness for smaller screens */
+    }
+  }
+  
+
+  .cto-container {
+    display: flex; /* Align the image and content side by side */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 10px; /* Padding for spacing */
+    width: 80%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    min-height: 80vh; /* Set the minimum height */
+  }
+  
+  .image-container {
+    position: relative; /* For positioning the LinkedIn icon */
+  }
+  
+  .biyy {
+    width: 400px; /* Image size */
+    height: 400px; /* Image size */
+    object-fit: cover; /* Ensure aspect ratio */
+    border-radius: 0; /* Flat base for the image */
+  }
+  
+  .ilinkedin-link {
+    position: relative; 
+    bottom: 10px;
+    right: 10px;
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  
+
+  
+  .ilinkedin-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    background: #005582; /* Darker LinkedIn blue on hover */
+  }
+  
+  .cto-content {
+    flex: 1; /* Allow content to fill remaining space */
+    max-width: 600px; /* Limit content width */
+    text-align: left; /* Left align the text */
+  }
+  
+  .cto-content h2 {
+    font-size: 28px; /* Set font size for role */
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .cto-content h1 {
+    font-size: 2.5rem; /* Larger font size for name */
+    color: #87e0f8;
+    margin: 10px 0;
+  }
+  
+  .cto-content p {
+    font-size: 18px; /* Increase font size for readability */
+    color: #000000;
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cto-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .biyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .ilinkedin-link {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    .cto-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .cto-content h1 {
+      font-size: 2.2rem; /* Adjust name font size */
+    }
+  
+    .cto-content p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cto-container {
+      
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .biyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .ilinkedin-link {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .cto-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .cto-content h1 {
+      font-size: 0.3rem; /* Adjust name font size */
+    }
+  
+    .cto-content p {
+      font-size: 14px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width:480px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    } 
+  }
+
+/* 
+  .cto-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 30px; 
+    padding: 10px 20px; 
+    margin: 0 auto; 
+    width: 80%; 
+    min-height: 80vh; 
+    background: white; 
+    text-align: center; 
+  }
+  
+  .biyy {
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 0; 
+  }
+  
+  .ilinkedin-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px; 
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    text-align: center;
+    margin-top: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .ilinkedin-link:hover {
+    transform: scale(1.1); 
+    background: #005582; 
+  }
+  
+  .cto-content {
+    flex: 1; 
+    max-width: 600px; 
+    text-align: left; 
+  }
+  
+  .cto-content h2 {
+    font-size: 2rem; 
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .cto-content h1 {
+    font-size: 2.5rem; 
+    color: #34495e;
+    margin: 10px 0;
+  }
+  
+  .cto-content p {
+    font-size: 1.1rem; 
+    color: #555;
+    line-height: 1.8; 
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cto-container {
+      flex-direction: column; 
+      text-align: center; 
+    }
+  
+    .biyy {
+      width: 350px; 
+      height: 350px;
+    }
+  
+    .ilinkedin-link {
+      width: 50px; 
+      height: 50px;
+      font-size: 1.2rem;
+    }
+  
+    .cto-content h2 {
+      font-size: 1.7rem; 
+    }
+  
+    .cto-content h1 {
+      font-size: 2.2rem; 
+    }
+  
+    .cto-content p {
+      font-size: 1.3rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cto-container {
+      padding: 0 10px;
+    }
+  
+    .biyy {
+      width: 300px; 
+      height: 300px;
+    }
+  
+    .ilinkedin-link {
+      width: 40px; 
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .cto-content h2 {
+      font-size: 1.5rem; 
+    }
+  
+    .cto-content h1 {
+      font-size: 1.8rem; 
+    }
+  
+    .cto-content p {
+      font-size: 1.4rem; 
+    }
+  }
+   */
+
+
+
+  /*-----iyy------*/
+
+  .co-container {
+    display: flex; /* Side-by-side layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 10px; /* Padding at the top and bottom */
+    margin: 0 auto; /* Center the container */
+    width: 80%; /* Adjust width to ensure space on the sides */
+    min-height: 80vh; /* Reduced height to minimize top and bottom space */
+    background: white; /* Background color for contrast */
+  }
+  
+  .ciyy {
+    width: 400px; /* Increased image size */
+    height: 400px; /* Increased image size */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 0; /* No rounded corners, flat base */
+  }
+  
+  /*.mlinkedin-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px; 
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-left: 20px; 
+  } */
+   
+  .mlinkedin-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* LinkedIn icon size */
+    height: 60px; /* LinkedIn icon size */
+    background: #0077b5; /* LinkedIn blue */
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; /* Circular icon */
+    text-align: center;
+    margin-left: 20px; /* Space between image and icon */
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+
+.cto-content {
+  flex: 1; /* Allow content to fill remaining space */
+  max-width: 600px; /* Limit content width */
+  text-align: left; /* Left align the text */
+}
+
+.cto-content h2 {
+  font-size: 28px; /* Set font size for role */
+  /* color: #2c3e50; */
+  /* color: #34495e; */
+  color:rgb(101, 97, 97);
+  margin: 0;
+}
+
+.cto-content h1 {
+  font-size: 2.5rem; /* Larger font size for name */
+  color: #000000;
+  margin: 10px 0;
+}
+
+.cto-content p {
+  font-size: 18px; /* Increase font size for readability */
+  color: #000000;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cto-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center align text */
+  }
+
+  .biyy {
+    width: 350px; /* Adjust image size */
+    height: 350px;
+  }
+
+  .ilinkedin-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .cto-content h2 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  .cto-content h1 {
+    font-size: 2.2rem; /* Adjust name font size */
+  }
+
+  .cto-content p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .cto-container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .biyy {
+    width: 300px; /* Adjust image size */
+    height: 300px;
+  }
+
+  .ilinkedin-link {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .cto-content h2 {
+    font-size: 20px; /* Adjust heading size */
+  }
+
+  .cto-content h1 {
+    font-size: 1.2rem; /* Adjust name font size */
+  }
+
+  .cto-content p {
+    /* margin-left: 2%; */
+    text-align: justify;
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+}
+
+
+
+
+
+
+
+
+
+.ilinkedin-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* LinkedIn icon size */
+  height: 60px; /* LinkedIn icon size */
+  background: #0077b5; /* LinkedIn blue */
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50%; /* Circular icon */
+  text-align: center;
+  margin-left: 20px; /* Space between image and icon */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+  
+  .mlinkedin-link:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    background: #005582; /* Darker hover effect */
+  }
+  
+  .co-content {
+    flex: 1; /* Allow content to take up remaining space */
+    max-width: 600px; /* Reduce content width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .co-content h2 {
+    font-size: 28px; /* Larger heading */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .co-content h1 {
+    font-size: 2.5rem; /* Larger name text */
+    color: #030303;
+    margin: 10px 0;
+  }
+  
+  .co-content p {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #000000;
+    line-height: 1.8; /* Improved readability */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .co-container {
+      flex-direction: column; /* Stack image and content vertically */
+      text-align: center; /* Center-align text */
+    }
+  
+    .ciyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .mlinkedin-link {
+      width: 50px; /* Adjust LinkedIn icon size */
+      height: 50px;
+      font-size: 1.2rem;
+      margin-left: 0; /* Remove space for smaller screens */
+      margin-top: 10px; /* Add space below image */
+    }
+  
+    .co-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .co-content h1 {
+      font-size: 2.2rem; /* Adjust name size */
+    }
+  
+    .co-content p {
+      margin-bottom: 5%;
+      font-size: 16px; /* Adjust font size of paragraph */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .co-container {
+      padding: 0 10px;
+      display:flex;
+      flex-direction: column-reverse;
+       /* Adjust padding for smaller screens */
+    }
+  
+    .ciyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .mlinkedin-link {
+      width: 40px; /* Adjust LinkedIn icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .co-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .co-content h1 {
+      font-size: 1.3rem; /* Adjust name size */
+    }
+  
+    .co-content p {
+      text-align: justify;
+      /* margin-left: 1%; */
+      font-size: 14px; /* Adjust font size of paragraph */
+    }
+  }
+  
+
+
+  .madv-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the heading horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 20vh; /* Set minimum height for visual balance */
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+  }
+  
+  #medical-advisors h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    font-weight: 700; /* Bold font */
+    color: #000000; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Capitalize all letters */
+    text-align: center; /* Center-align text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  }
+  
+  .custom-under {
+    position: relative; /* Required for pseudo-element */
+    display: inline-block; /* Ensure the text is treated as block-level */
+    padding-bottom: 10px; /* Space below the text */
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    #medical-advisors h1 {
+      font-size: 2.5rem; /* Reduce font size for tablets */
+    }
+  
+    .custom-under::after {
+      height: 3px; /* Adjust underline thickness */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #medical-advisors h1 {
+      font-size: 1.5rem; /* Further reduce font size for small screens */
+    }
+  
+    .custom-under::after {
+      height: 2px; /* Adjust underline thickness for smaller screens */
+    }
+  }
+  
+ 
+
+
+
+  .cma-container {
+    display: flex; /* Align the image and content side by side */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding for spacing */
+    width: 80%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    min-height: 80vh; /* Set the minimum height */
+  }
+  
+  .image-container {
+    position: relative; /* For positioning the LinkedIn icon */
+  }
+  
+  .cmaiyy {
+    width: 400px; /* Image size */
+    height: 400px; /* Image size */
+    object-fit: cover; /* Ensure aspect ratio */
+    border-radius: 0; /* Flat base for the image */
+  }
+  
+  .cmalinkedin-link {
+    position: relative; 
+    bottom: 10px;
+    right: 10px;
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    padding: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  
+
+  
+  .cmalinkedin-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    background: #005582; /* Darker LinkedIn blue on hover */
+  }
+  
+  .cma-content {
+    flex: 1; /* Allow content to fill remaining space */
+    max-width: 600px; /* Limit content width */
+    text-align: left; /* Left align the text */
+  }
+  
+  .cma-content h2 {
+    font-size: 28px; /* Set font size for role */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .cma-content h1 {
+    font-size: 2.5rem; /* Larger font size for name */
+    /* color: #34495e; */
+    color:black;
+    margin: 10px 0;
+  }
+  
+  .cma-content p {
+    font-size: 18px; /* Increase font size for readability */
+    color: #000000;
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cma-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .cmaiyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .cmalinkedin-link {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    .cma-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .cma-content h1 {
+      font-size: 2.2rem; /* Adjust name font size */
+    }
+  
+    .cma-content p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cma-container {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .cmaiyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .cmalinkedin-link {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .cma-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .cma-content h1 {
+      font-size: 1.3rem; /* Adjust name font size */
+    }
+  
+    .cma-content p {
+      text-align: justify;
+      /* margin-left: 1%; */
+      width:100%;
+      font-size: 14px; /* Adjust paragraph font size */
+    }
+  }
+  
+
+
+
+  .ls-container {
+    display: flex; /* Side-by-side layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding at the top and bottom */
+    margin: 0 auto; /* Center the container */
+    width: 80%; /* Adjust width to ensure space on the sides */
+    min-height: 80vh; /* Reduced height to minimize top and bottom space */
+    background: white; /* Background color for contrast */
+  }
+  
+  .lsiyy {
+    width: 400px; /* Increased image size */
+    height: 400px; /* Increased image size */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 0; /* No rounded corners, flat base */
+  }
+
+
+
+
+  .ls-content {
+    flex: 1; /* Allow content to take up remaining space */
+    max-width: 600px; /* Reduce content width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .ls-content h2 {
+    font-size: 28px; /* Larger heading */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .ls-content h1 {
+    font-size: 2.5rem; /* Larger name text */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .ls-content p {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #000000;
+    line-height: 1.8; /* Improved readability */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .ls-container {
+      flex-direction: column; /* Stack image and content vertically */
+      text-align: center; /* Center-align text */
+    }
+  
+    .lsiyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .mlinkedin-link {
+      width: 50px; /* Adjust LinkedIn icon size */
+      height: 50px;
+      font-size: 1.2rem;
+      margin-left: 0; /* Remove space for smaller screens */
+      margin-top: 10px; /* Add space below image */
+    }
+  
+    .ls-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .ls-content h1 {
+      font-size: 2.2rem; /* Adjust name size */
+    }
+  
+    .ls-content p {
+      font-size: 16px; /* Adjust font size of paragraph */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ls-container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .lsiyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .mlinkedin-link {
+      width: 40px; 
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .ls-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .ls-content h1 {
+      font-size: 1.3rem; /* Adjust name size */
+    }
+  
+    .ls-content p {
+      text-align: justify;
+      width: 100%;
+      /* margin-left: 2%; */
+      font-size: 14px; /* Adjust font size of paragraph */
+    }
+  }
+
+
+  .mt-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the heading horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 20vh; /* Set minimum height for visual balance */
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+  }
+  
+  #medical-team h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    font-weight: 700; /* Bold font */
+    color: #000000; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Capitalize all letters */
+    text-align: center; /* Center-align text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  }
+  
+  .custom-under {
+    position: relative; /* Required for pseudo-element */
+    display: inline-block; /* Ensure the text is treated as block-level */
+    padding-bottom: 10px; /* Space below the text */
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    #medical-team h1 {
+      font-size: 2.5rem; /* Reduce font size for tablets */
+    }
+  
+    .custom-under::after {
+      height: 3px; /* Adjust underline thickness */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #medical-team h1 {
+      font-size: 1.5rem; /* Further reduce font size for small screens */
+    }
+  
+    .custom-under::after {
+      height: 2px; /* Adjust underline thickness for smaller screens */
+    }
+  }
+  
+
+  .ur-container {
+    display: flex; /* Align the image and content side by side */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding for spacing */
+    width: 80%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    min-height: 80vh; /* Set the minimum height */
+  }
+  
+  .image-container {
+    position: relative; /* For positioning the LinkedIn icon */
+  }
+  
+  .uriyy {
+    width: 400px; /* Image size */
+    height: 400px; /* Image size */
+    object-fit: cover; /* Ensure aspect ratio */
+    border-radius: 0; /* Flat base for the image */
+  }
+  
+  .urlinkedin-link {
+    position: relative; 
+    bottom: 10px;
+    right: 10px;
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    padding: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  
+
+  
+  .urlinkedin-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    background: #005582; /* Darker LinkedIn blue on hover */
+  }
+  
+  .ur-content {
+    flex: 1; /* Allow content to fill remaining space */
+    max-width: 600px; /* Limit content width */
+    text-align: left; /* Left align the text */
+  }
+  
+  .ur-content h2 {
+    font-size: 28px; /* Set font size for role */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .ur-content h1 {
+    font-size: 2.5rem; /* Larger font size for name */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .ur-content p {
+    font-size: 18px; /* Increase font size for readability */
+    color: #000000;
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .ur-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .uriyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .urlinkedin-link {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    .ur-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .ur-content h1 {
+      font-size: 2.2rem; /* Adjust name font size */
+    }
+  
+    .ur-content p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ur-container {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .uriyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .urlinkedin-link {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .ur-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .ur-content h1 {
+      font-size: 1.3rem; /* Adjust name font size */
+    }
+  
+    .ur-content p {
+      text-align: justify;
+      width: 100%;
+      /* margin-left: 2%; */
+      font-size: 14px; /* Adjust paragraph font size */
+    }
+  }
+  
+
+
+  .mur-container {
+    display: flex; /* Side-by-side layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding at the top and bottom */
+    margin: 0 auto; /* Center the container */
+    width: 80%; /* Adjust width to ensure space on the sides */
+    min-height: 80vh; /* Reduced height to minimize top and bottom space */
+    background: white; /* Background color for contrast */
+  }
+  
+  .muriyy {
+    width: 400px; /* Increased image size */
+    height: 400px; /* Increased image size */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 0; /* No rounded corners, flat base */
+  }
+
+
+
+
+  .mur-content {
+    flex: 1; /* Allow content to take up remaining space */
+    max-width: 600px; /* Reduce content width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .mur-content h2 {
+    font-size: 28px; /* Larger heading */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .mur-content h1 {
+    font-size: 2.5rem; /* Larger name text */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .mur-content p {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #000000;
+    line-height: 1.8; /* Improved readability */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .mur-container {
+      flex-direction: column; /* Stack image and content vertically */
+      text-align: center; /* Center-align text */
+    }
+  
+    .muriyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .mlinkedin-link {
+      width: 50px; /* Adjust LinkedIn icon size */
+      height: 50px;
+      font-size: 1.2rem;
+      margin-left: 0; /* Remove space for smaller screens */
+      margin-top: 10px; /* Add space below image */
+    }
+  
+    .mur-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .mur-content h1 {
+      font-size: 2.2rem; /* Adjust name size */
+    }
+  
+    .mur-content p {
+      font-size: 16px; /* Adjust font size of paragraph */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mur-container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .muriyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .mlinkedin-link {
+      width: 40px; /* Adjust LinkedIn icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .mur-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .mur-content h1 {
+      font-size: 1.3rem; /* Adjust name size */
+    }
+  
+    .mur-content p {
+      width: 100%;
+      text-align: justify;
+      /* margin-left: 2%; */
+      font-size: 14px; /* Adjust font size of paragraph */
+    }
+  }
+
+
+  .gs-container {
+    display: flex; /* Align the image and content side by side */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding for spacing */
+    width: 80%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    min-height: 80vh; /* Set the minimum height */
+  }
+  
+  .image-container {
+    position: relative; /* For positioning the LinkedIn icon */
+  }
+  
+  .gsiyy {
+    width: 400px; /* Image size */
+    height: 400px; /* Image size */
+    object-fit: cover; /* Ensure aspect ratio */
+    border-radius: 0; /* Flat base for the image */
+  }
+  
+  .gslinkedin-link {
+    position: relative; 
+    bottom: 10px;
+    right: 10px;
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    padding: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  
+
+  
+  .gslinkedin-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    background: #005582; /* Darker LinkedIn blue on hover */
+  }
+  
+  .gs-content {
+    flex: 1; /* Allow content to fill remaining space */
+    max-width: 600px; /* Limit content width */
+    text-align: left; /* Left align the text */
+  }
+  
+  .gs-content h2 {
+    font-size: 28px; /* Set font size for role */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .gs-content h1 {
+    font-size: 2.5rem; /* Larger font size for name */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .gs-content p {
+    font-size: 18px; /* Increase font size for readability */
+    color: #000000;
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .gs-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .gsiyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .gslinkedin-link {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    .gs-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .gs-content h1 {
+      font-size: 2.2rem; /* Adjust name font size */
+    }
+  
+    .gs-content p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gs-container {
+
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .gsiyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .gslinkedin-link {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .gs-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .gs-content h1 {
+      font-size: 1.3rem; /* Adjust name font size */
+    }
+  
+    .gs-content p {
+      text-align: justify;
+      width: 100%;
+      /* margin-left: 2%; */
+      font-size: 14px; /* Adjust paragraph font size */
+    }
+  }
+  
+
+  .mp-container {
+    display: flex; /* Side-by-side layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding at the top and bottom */
+    margin: 0 auto; /* Center the container */
+    width: 80%; /* Adjust width to ensure space on the sides */
+    min-height: 80vh; /* Reduced height to minimize top and bottom space */
+    background: white; /* Background color for contrast */
+  }
+  
+  .mpiyy {
+    width: 400px; /* Increased image size */
+    height: 400px; /* Increased image size */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 0; /* No rounded corners, flat base */
+  }
+
+
+
+
+  .mp-content {
+    flex: 1; /* Allow content to take up remaining space */
+    max-width: 600px; /* Reduce content width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .mp-content h2 {
+    font-size: 28px; /* Larger heading */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .mp-content h1 {
+    font-size: 2.5rem; /* Larger name text */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .mp-content p {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #000000;
+    line-height: 1.8; /* Improved readability */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .mp-container {
+      flex-direction: column; /* Stack image and content vertically */
+      text-align: center; /* Center-align text */
+    }
+  
+    .mpiyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .linkedin-link {
+      width: 50px; /* Adjust LinkedIn icon size */
+      height: 50px;
+      font-size: 1.2rem;
+      margin-left: 0; /* Remove space for smaller screens */
+      margin-top: 10px; /* Add space below image */
+    }
+  
+    .mp-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .mp-content h1 {
+      font-size: 2.2rem; /* Adjust name size */
+    }
+  
+    .mp-content p {
+      font-size: 16px; /* Adjust font size of paragraph */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mp-container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .mpiyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .mplinkedin-link {
+      width: 40px; /* Adjust LinkedIn icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .mp-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .mp-content h1 {
+      font-size: 1.3rem; /* Adjust name size */
+    }
+  
+    .mp-content p {
+      text-align: justify;
+      width: 100%;
+      /* margin-left: 2%; */
+      font-size: 14px; /* Adjust font size of paragraph */
+    }
+  }
+
+
+  .ta-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the heading horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 20vh; /* Set minimum height for visual balance */
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+  }
+  
+  #technical-advisors h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    font-weight: 700; /* Bold font */
+    color: #000000; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Capitalize all letters */
+    text-align: center; /* Center-align text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  }
+  
+  .custom-under {
+    position: relative; /* Required for pseudo-element */
+    display: inline-block; /* Ensure the text is treated as block-level */
+    padding-bottom: 10px; /* Space below the text */
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    #technical-advisors h1 {
+      font-size: 2.5rem; /* Reduce font size for tablets */
+    }
+  
+    .custom-under::after {
+      height: 3px; /* Adjust underline thickness */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #technical-advisors h1 {
+      font-size: 1.5rem; /* Further reduce font size for small screens */
+    }
+  
+    .custom-under::after {
+      height: 2px; /* Adjust underline thickness for smaller screens */
+    }
+  }
+  
+
+
+  .cta-container {
+    display: flex; /* Align the image and content side by side */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding for spacing */
+    width: 80%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    min-height: 80vh; /* Set the minimum height */
+  }
+  
+  .image-container {
+    position: relative; /* For positioning the LinkedIn icon */
+  }
+  
+  .ctaiyy {
+    width: 400px; /* Image size */
+    height: 400px; /* Image size */
+    object-fit: cover; /* Ensure aspect ratio */
+    border-radius: 0; /* Flat base for the image */
+  }
+  
+  .ctalinkedin-link {
+    position: relative; 
+    bottom: 10px;
+    right: 10px;
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    padding: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  
+
+  
+  .ctalinkedin-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    background: #005582; /* Darker LinkedIn blue on hover */
+  }
+  
+  .cta-content {
+    flex: 1; /* Allow content to fill remaining space */
+    max-width: 600px; /* Limit content width */
+    text-align: left; /* Left align the text */
+  }
+  
+  .cta-content h2 {
+    font-size: 28px; /* Set font size for role */
+    color:#203040;
+    margin: 0;
+  }
+  
+  .cta-content h1 {
+    font-size: 2.5rem; /* Larger font size for name */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .cta-content p {
+    font-size: 18px; /* Increase font size for readability */
+    /* color: #e9e4e4; */
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cta-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .ctaiyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .ctalinkedin-link {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    .cta-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .cta-content h1 {
+      font-size: 2.2rem; /* Adjust name font size */
+    }
+  
+    .cta-content p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cta-container {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .ctaiyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .ctalinkedin-link {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .cta-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .cta-content h1 {
+      font-size: 1.3rem; /* Adjust name font size */
+    }
+  
+    .cta-content p {
+      text-align: justify;
+      width: 100%;
+      /* margin-left: 2%; */
+      font-size: 14px;
+       /* Adjust paragraph font size */
+    }
+  }
+  
+
+
+  .cmre-container {
+    display: flex; /* Side-by-side layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding at the top and bottom */
+    margin: 0 auto; /* Center the container */
+    width: 80%; /* Adjust width to ensure space on the sides */
+    min-height: 80vh; /* Reduced height to minimize top and bottom space */
+    background: white; /* Background color for contrast */
+  }
+  
+  .cmreiyy {
+    width: 400px; /* Increased image size */
+    height: 400px; /* Increased image size */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 0; /* No rounded corners, flat base */
+  }
+
+
+
+
+  .cmre-content {
+    flex: 1; /* Allow content to take up remaining space */
+    max-width: 600px; /* Reduce content width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .cmre-content h2 {
+    font-size: 28px; /* Larger heading */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .cmre-content h1 {
+    font-size: 2.5rem; /* Larger name text */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .cmre-content p {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #000000;
+    line-height: 1.8; /* Improved readability */
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cmre-container {
+      flex-direction: column; /* Stack image and content vertically */
+      text-align: center; /* Center-align text */
+    }
+  
+    .cmreiyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .cmrelinkedin-link {
+      width: 50px; /* Adjust LinkedIn icon size */
+      height: 50px;
+      font-size: 1.2rem;
+      margin-left: 0; /* Remove space for smaller screens */
+      margin-top: 10px; /* Add space below image */
+    }
+  
+    .cmre-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .cmre-content h1 {
+      font-size: 2.2rem; /* Adjust name size */
+    }
+  
+    .cmre-content p {
+      font-size: 16px; /* Adjust font size of paragraph */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cmre-container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .cmreiyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .cmrelinkedin-link {
+      width: 40px; /* Adjust LinkedIn icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .cmre-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .cmre-content h1 {
+      font-size: 1.3rem; /* Adjust name size */
+    }
+  
+    .cmre-content p {
+      text-align: justify;
+      width: 100%;
+      /* margin-left: 2%; */
+      font-size: 14px; /* Adjust font size of paragraph */
+    }
+  }
+
+
+
+  .cee-container {
+    display: flex; /* Align the image and content side by side */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 30px; /* Space between image and content */
+    padding: 10px 20px; /* Padding for spacing */
+    width: 80%; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    min-height: 80vh; /* Set the minimum height */
+  }
+  
+  .image-container {
+    position: relative; /* For positioning the LinkedIn icon */
+  }
+  
+  .ceeiyy {
+    width: 400px; /* Image size */
+    height: 400px; /* Image size */
+    object-fit: cover; /* Ensure aspect ratio */
+    border-radius: 0; /* Flat base for the image */
+  }
+  
+  .ceelinkedin-link {
+    position: relative; 
+    bottom: 10px;
+    right: 10px;
+    background: #0077b5; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%; 
+    padding: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  
+
+  
+  .ceelinkedin-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    background: #005582; /* Darker LinkedIn blue on hover */
+  }
+  
+  .cee-content {
+    flex: 1; /* Allow content to fill remaining space */
+    max-width: 600px; /* Limit content width */
+    text-align: left; /* Left align the text */
+  }
+  
+  .cee-content h2 {
+    font-size: 28px; /* Set font size for role */
+    /* color: #2c3e50; */
+    color:rgb(101, 97, 97);
+    margin: 0;
+  }
+  
+  .cee-content h1 {
+    font-size: 2.5rem; /* Larger font size for name */
+    color: #000000;
+    margin: 10px 0;
+  }
+  
+  .cee-content p {
+    font-size: 18px; /* Increase font size for readability */
+    color: #000000;
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cee-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .ceeiyy {
+      width: 350px; /* Adjust image size */
+      height: 350px;
+    }
+  
+    .ceelinkedin-link {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  
+    .cee-content h2 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .cee-content h1 {
+      font-size: 2.2rem; /* Adjust name font size */
+    }
+  
+    .cee-content p {
+      font-size: 16px; /* Adjust paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cee-container {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .ceeiyy {
+      width: 300px; /* Adjust image size */
+      height: 300px;
+    }
+  
+    .ceelinkedin-link {
+      width: 40px; /* Adjust icon size */
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    .cee-content h2 {
+      font-size: 20px; /* Adjust heading size */
+    }
+  
+    .cee-content h1 {
+      font-size: 1.3rem; /* Adjust name font size */
+    }
+  
+    .cee-content p {
+      text-align: justify;
+      width: 100%;
+      /* margin-left: 2%; */
+      font-size: 14px;
+       /* Adjust paragraph font size */
+    }
+  }
+  
+
+  .rnd-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the heading horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 20vh; /* Set minimum height for visual balance */
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+  }
+  
+  #rnd h1 {
+    font-size: 3rem; /* Large font size for the heading */
+    font-weight: 700; /* Bold font */
+    color: #000000; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Capitalize all letters */
+    text-align: center; /* Center-align text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  }
+  
+  /* .custom-under {
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 10px; 
+  }
+  
+  .custom-under::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 4px; 
+    background: linear-gradient(to right, #3498db, #8e44ad); 
+    border-radius: 2px; 
+  } */
+  
+  @media (max-width: 768px) {
+    #rnd h1 {
+      font-size: 2.5rem; /* Reduce font size for tablets */
+    }
+  
+    .custom-under::after {
+      height: 3px; /* Adjust underline thickness */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #rnd h1 {
+      font-size: 1.5rem; /* Further reduce font size for small screens */
+    }
+  
+    .custom-under::after {
+      height: 2px; /* Adjust underline thickness for smaller screens */
+    }
+  }
+  
+
+
+  .rd-container {
+    border-bottom: 2px black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;  /* Allow wrapping of items if needed */
+    gap: 10px;  /* Space between items */
+}
+
+.rd-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;  /* Ensure images stay in a single line */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 20%;  /* Default width for larger screens */
+    margin: 10px;
+}
+
+.i-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-container img {
+    width: 100%;  /* Makes image width responsive */
+    height: 40vh;  /* Maintain aspect ratio */
+    max-width: 330px;  /* Max width to prevent images from growing too large */
+    border-radius: 10%;  /* Make the image circular */
+    object-fit: cover;   /* Ensure the image covers the circle without distorting */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional shadow for visual effect */
+    transition: transform 0.3s ease;  /* Optional zoom effect */
+}
+
+.i-container img:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+.linkedin-link {
+    position: absolute;
+    bottom: -10px;  /* Place the LinkedIn icon below the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0077b5;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-link:hover {
+    background: #005582;
+    transform: scale(1.1);
+}
+
+.item h1 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color:black;
+    margin-top: 20px;
+}
+
+.item h2 {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive Design */
+
+/* Medium Screens (up to 1024px) */
+@media (max-width: 1024px) {
+    .item {
+        width: 30%;  /* 4 items per row on medium screens */
+    }
+    .i-container img {
+        max-width: 200px;  /* Reduce image size */
+    }
+}
+
+/* Small Screens (up to 768px) */
+@media (max-width: 768px) {
+    .item {
+        width: 33.33%;  /* 3 items per row on small screens */
+    }
+    .i-container img {
+        max-width: 220px;  /* Reduce image size further */
+    }
+    .rd-container {
+        display:block;
+        
+    }
+    .rd-content {
+        display:block;
+    }
+}
+
+/* Extra Small Screens (up to 480px) */
+/* @media (max-width: 480px) {
+    .rd-container {
+        display:block;
+    }
+    .rd-content {
+        display:block;
+    }
+    .item {
+        width: 100%;  
+        margin-bottom: 20px;  
+    }
+    .i-container img {
+        max-width: 200px;  
+    }
+    h1, h2 {
+        font-size: 1rem;  
+    }
+} */
+
+  
+  
+@media (max-width: 480px) {
+  .rd-container {
+      display: block;
+      
+  }
+  .rd-content {
+    
+      display: block;
+  }
+  .item {
+    
+      width: 100%;  /* 1 item per row on extra small screens */
+      margin-bottom: 20px;  /* Space between items */
+  }
+  .i-container img {
+    
+      max-width: 300px;  /* Further reduce image size */
+      /* margin: 0 auto;   */
+      text-align: center;
+      display: block;  /* Ensures block-level centering */
+  }
+  h1, h2 {
+      font-size: 1rem;  /* Smaller font size for mobile screens */
+      text-align: center; /* Center aligns text */
+  }
+}
+

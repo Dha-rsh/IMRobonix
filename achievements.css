@@ -1,0 +1,552 @@
+.contactslider {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    width: 300%; 
+    height: 100%;
+    animation: slideAnimation 20s linear infinite;
+    z-index:0;
+  }
+  .slide {
+    position: relative; 
+    width: 100vw; 
+    height: 100%; 
+  }
+  .contslide-image {
+    width: 100%; 
+    height: 130vh; 
+    object-fit: cover;
+    animation: zoomOut 20s linear infinite;
+  }
+
+  @keyframes slideAnimation {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100vw); }
+    50%, 70% { transform: translateX(-200vw); }
+    75%, 100% { transform: translateX(0); }
+  }
+  
+  @keyframes zoomIn {
+    0%, 20% { transform: scale(1); }
+    25%, 45% { transform: scale(1.1); } 
+    50%, 70% { transform: scale(1); } 
+    75%, 100% { transform: scale(1.1); } 
+  }
+  .contslide-image:nth-child(1) {
+    animation: slideAnimation 15s linear infinite, zoomIn 15s linear infinite;
+    animation-delay: 0s;
+  }
+  .contslide-image:nth-child(2) {
+    animation: slideAnimation 15s linear infinite, zoomIn 15s linear infinite;
+    animation-delay: 8s;
+  }
+  .contslide-image:nth-child(3) {
+    animation: slideAnimation 15s linear infinite, zoomIn 15s linear infinite;
+    animation-delay: 10s; 
+  } 
+
+  @media (max-width: 768px) {
+    .contactslider {
+        height: 80vh; /* Reduce height for smaller screens */
+    }
+
+    .contslide-image {
+        height: 120vh; /* Adjust image height to fit smaller viewports */
+    }
+
+    .slide {
+        width: 100vw; /* Ensure slides take up the full screen width */
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .contactslider {
+      
+        height: 60vh; /* Further reduce height for small screens */
+    }
+
+    .contslide-image {
+        height: 100vh; 
+        /* object-fit:fill;  */
+    }
+
+    @keyframes slideAnimation {
+        0%, 25% { transform: translateX(0); }
+        30%, 55% { transform: translateX(-100vw); }
+        60%, 85% { transform: translateX(-200vw); }
+        90%, 100% { transform: translateX(0); }
+    }
+}
+
+/* For large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .contactslider {
+        height: 100vh; /* Full viewport height for large screens */
+    }
+
+    .contslide-image {
+        height: 140vh; /* Slightly larger height for better visibility */
+    }
+}
+
+
+/* General Styling */
+.tit {
+    text-align: center; /* Center the heading */
+    margin: 20px 0; /* Add space above and below the heading */
+}
+
+.tit h1 {
+    font-size: 36px; /* Base font size for larger screens */
+    color: #000000; /* A professional blue shade */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    font-weight: 700; /* Make the text bold */
+    line-height: 1.2; /* Adjust line height for readability */
+    margin: 0; /* Remove default margin */
+}
+
+/* Add a gradient border below the heading */
+.tit h1::after {
+    content: '';
+    display: block;
+    width: 100px; /* Length of the line */
+    height: 4px; /* Thickness of the line */
+    margin: 10px auto 0; /* Center the line and add space above */
+    background: linear-gradient(to right, #004aad, #00c6ff); /* Gradient color */
+}
+
+/* Responsive Design */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .tit h1 {
+        font-size: 28px; /* Reduce font size for tablets */
+        letter-spacing: 1.5px; /* Adjust spacing */
+    }
+
+    .tit h1::after {
+        width: 80px; /* Shorten the gradient line */
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .tit h1 {
+        font-size: 24px; /* Further reduce font size for small screens */
+        letter-spacing: 1px; /* Adjust spacing for readability */
+    }
+
+    .tit h1::after {
+        width: 60px; /* Shorten the gradient line even more */
+    }
+}
+
+
+
+
+/* Common background image for the entire section */
+.sec-ach {
+    background-image: url('images/bgach.png'); /* Change 'bgach.png' to your desired background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px 20px; /* Extra padding at the sides for the entire section */
+    color: #fff; /* Default text color for contrast */
+}
+
+/* Flex layout for each container */
+.container-cm,
+.container-msmeminister,
+.container-sisfs,
+.container-ivp,
+.container-anic,
+.container-fitt {
+    display: flex; /* Flex layout for the container */
+    justify-content: space-between; /* Space out the image and content */
+    align-items: center; /* Vertically center items */
+    margin-bottom: 20px; /* Add space between containers */
+    padding: 30px 100px; /* Extra padding on the sides */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: dark background for the content */
+    border-radius: 10px; /* Rounded corners for each container */
+}
+
+/* Image styling */
+.container-cm .cm,
+.container-msmeminister .msmeminister,
+.container-sisfs .sisfs,
+.container-ivp .ivp,
+.container-anic .anic,
+.container-fitt .fitt {
+    width: 40%; /* Set width of the image */
+    height: 45vh; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional: shadow around the image */
+}
+
+/* Content styling */
+.content-cm,
+.content-msmeminister,
+.content-sisfs,
+.content-ivp,
+.content-anic,
+.content-fitt {
+    width: 55%; /* Content takes up 55% of the space */
+    padding-left: 20px; /* Add space between image and content */
+}
+
+/* Heading styling */
+.content-cm h1,
+.content-msmeminister h1,
+.content-sisfs h1,
+.content-ivp h1,
+.content-anic h1,
+.content-fitt h1 {
+    font-size: 36px; /* Set font size for headings */
+    margin-bottom: 10px;
+    color: #929496; /* Gray color for the heading */
+}
+
+/* Paragraph styling */
+.content-cm p,
+.content-msmeminister p,
+.content-sisfs p,
+.content-ivp p,
+.content-anic p,
+.content-fitt p {
+    font-size: 18px; /* Set font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    color: #ffffff; /* White color for the paragraph text */
+}
+
+/* Responsive Design */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .container-cm,
+    .container-msmeminister,
+    .container-sisfs,
+    .container-ivp,
+    .container-anic,
+    .container-fitt {
+        
+        flex-direction: column; /* Stack the image and content vertically */
+        text-align: center; /* Center-align the content */
+        padding: 15px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .cm,
+    .msmeminister,
+    .sisfs,
+    .ivp,
+    .anic,
+    .fitt {
+        width: 80%; /* Adjust image width */
+        margin-bottom: 20px; /* Add space between image and content */
+    }
+
+    .content-cm,
+    .content-msmeminister,
+    .content-sisfs,
+    .content-ivp,
+    .content-anic,
+    .content-fitt {
+        width: 90%; /* Adjust content width for smaller screens */
+    }
+
+    .content-cm h1,
+    .content-msmeminister h1,
+    .content-sisfs h1,
+    .content-ivp h1,
+    .content-anic h1,
+    .content-fitt h1 {
+        font-size: 28px; /* Adjust heading size */
+    }
+
+    .content-cm p,
+    .content-msmeminister p,
+    .content-sisfs p,
+    .content-ivp p,
+    .content-anic p,
+    .content-fitt p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .container-cm,
+    .container-msmeminister,
+    .container-sisfs,
+    .container-ivp,
+    .container-anic,
+    .container-fitt {
+      
+        padding: 5px 5px; /* Further reduce padding on mobile */
+    }
+
+    .cm,
+    .msmeminister,
+    .sisfs,
+    .ivp,
+    .anic,
+    .fitt {
+      
+        width: 50%; /* Further reduce image width */
+    }
+    .container-cm .cm,
+.container-msmeminister .msmeminister,
+.container-sisfs .sisfs,
+.container-ivp .ivp,
+.container-anic .anic,
+.container-fitt .fitt {
+    width:100%;
+    height:35vh;
+}
+    .content-cm h1,
+    .content-msmeminister h1,
+    .content-sisfs h1,
+    .content-ivp h1,
+    .content-anic h1,
+    .content-fitt h1 {
+      margin-left: -20px;
+        text-align: justify;
+        font-size: 24px; /* Smaller heading size */
+    }
+
+    .content-cm p,
+    .content-msmeminister p,
+    .content-sisfs p,
+    .content-ivp p,
+    .content-anic p,
+    .content-fitt p {
+      text-align: justify;
+        margin-left: -20px;
+        font-size: 14px; /* Smaller paragraph size */
+    }
+}
+
+
+
+/* General styles for counters section */
+
+/* margin: 8%;
+    margin-top: 0%;
+    margin-bottom: 0%; */
+
+    /* .counters {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 190px;
+    transform: translateX(-8%);
+    
+    background-image: url('sponbg3.png'); 
+    background-size: cover;
+    background-color: #000000;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 150px; 
+    
+    color: white;
+    position:relative; 
+  } */
+
+  .counters {
+    margin: 8% auto; /* Centering horizontally */
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    gap: 190px;
+    
+    /* Background settings */
+    background: #000000; /* Fallback color */
+    background-image: url('images/sponbg3.png');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background fixed on scroll */
+    
+    /* Spacing */
+    padding: 150px 5%; /* Prevents excessive padding */
+    
+    /* Text styling */
+    color: white;
+    
+    /* Ensures proper layout positioning */
+    position: relative; 
+    box-sizing: border-box; /* Ensures padding doesn't exceed max width */
+}
+
+  
+  /* Counter styling */
+  .counter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark transparent background for counters */
+    padding: 20px; /* Add padding inside the counter */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for effect */
+  }
+  
+  /* Counter number styling */
+  .number {
+    font-size: 4.5rem;
+    color: rgb(103, 219, 251); /* Light blue */
+    text-shadow: 4px 4px black;
+    font-weight: bold;
+  }
+  
+  /* Label styling for the counter */
+  .label {
+    font-size: 180%;
+    color: rgb(255, 255, 255); /* White color for labels */
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    font-weight: 650;
+  }
+  
+  /* Styling for image inside stat content */
+  .stat-content img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover; /* Make sure the image covers the container without distortion */
+  }
+  
+  /* Heading inside stat content */
+  .stat-content h1 {
+    color: black;
+    font-size: 250%;
+    font-weight: 600;
+    transform: translateX(140%);
+    margin-bottom: 3%;
+  }
+  
+  /* Main heading in counters section */
+  .counters h1 {
+    position: absolute;
+    top: 10%;
+    right: 45%;
+    font-size: 250%;
+    margin: 0;
+    color: rgb(255, 255, 255); /* White color for heading */
+    padding-bottom: 20%;
+    text-shadow: 2px 2px black;
+    font-weight: 700;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 1024px) {
+    .counters {
+      padding: 150px 50px; /* Reduce padding for tablets */
+      gap: 50px; /* Reduce the gap between counters */
+    }
+  
+    .counter {
+      width: 200px; /* Slightly increase counter width */
+    }
+  
+    .counters h1 {
+      font-size: 2rem; /* Smaller font for the main heading */
+      top: 5%;
+      right: 35%; /* Adjust heading position for tablets */
+    }
+  
+    .number {
+      font-size: 3.5rem; /* Adjust number font size for smaller screens */
+    }
+  
+    .label {
+      font-size: 150%; /* Adjust label font size */
+    }
+  }
+  
+
+
+
+  /* For tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    /* .counters {
+      padding: 100px 20px; 
+      gap: 30px; 
+    } */
+  
+    .counters {
+      flex-direction: column; /* Stack elements vertically */
+      gap: 50px; /* Reduce gap */
+      padding: 100px 5%; /* Adjust padding */
+      background-attachment: scroll; /* Allow background to scroll */
+  }
+    .counter {
+      width: 180px; /* Slightly increase counter width */
+    }
+  
+    .counters h1 {
+      font-size: 2rem; /* Smaller font for the main heading */
+      top: 5%;
+      right: 35%; /* Adjust heading position for tablets */
+    }
+  
+    .number {
+      font-size: 3.5rem; /* Adjust number font size for smaller screens */
+    }
+  
+    .label {
+      font-size: 150%; /* Adjust label font size */
+    }
+  }
+  
+  /* For mobile phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    /* .counters {
+      width: 100%;
+      display:block;
+      flex-direction: row; 
+      padding: 40px 15px; 
+      gap: 20px; 
+    } */
+
+    .counters {
+      gap: 30px; /* Further reduce gap */
+      padding: 80px 3%; /* Adjust padding */
+      text-align: center; /* Center text for smaller screens */
+  }
+  
+    .counter {
+      text-align: center;
+      width: 100%; /* Full-width counters on mobile */
+    }
+  
+    .counters h1 {
+      font-size: 1.5rem; /* Smaller heading size */
+      /* top: 10%; */
+      /* right: 25%;  */
+      margin-bottom: 5%;
+      text-align: center;
+    }
+  
+    .number {
+      font-size: 2rem; /* Smaller number size */
+    }
+  
+    .label {
+      font-size: 100%; /* Smaller label font size */
+    }
+  }
+  
